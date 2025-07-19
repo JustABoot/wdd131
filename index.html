@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Alejandro Paz | Web Development Page with personal and educational content.">
+  <meta name="author" content="Alejandro Paz">
+  <title>WDD 131 – Dynamic Web Fundamentals – Alejandro Paz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Alejandro Paz</span></h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/alejandro-paz-a4408a338/">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/5?lang=eng&id=p3-p4#p3">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="card-content">
+        
+        <!-- Parte superior: Descripción + Foto de perfil -->
+        <div class="top-section">
+          <div class="description">
+           <p>
+           Hello! I'm Alejandro Paz, a 20-year-old Catholic musician and passionate web development student from Maracaibo, Venezuela. I’m deeply committed to using my talents to serve others through both music and technology. I actively participate in my local parish, where I play instruments like the cuatro and guitar during Mass, helping to bring people closer to God through music. I believe in the power of creativity, faith, and perseverance. Currently, I'm studying software development with a focus on creating clean and functional web interfaces.
+           </p>
+          </div>
+          <img src="images/profile.jpg" alt="Alejandro's Photo" class="profile-pic">
+        </div>
+
+        <!-- Línea divisora -->
+        <hr class="divider">
+
+        <!-- Parte inferior: Bandera + Texto de Maracaibo -->
+        <div class="bottom-section">
+          <figure class="flag">
+            <img src="images/venezuela-flag.jpg" alt="Flag of Venezuela" />
+            <figcaption>Official Flag of Venezuela</figcaption>
+          </figure>
+          <div class="maracaibo-text">
+            <h3>Maracaibo, Venezuela</h3>
+            <p>Venezuela is a rich and diverse country in northern South America. It has the largest proven oil reserves in the world and ranks 7th globally in biodiversity, with over 25,000 plant species and 1,400 bird species. From the Andes to the Amazon and the Caribbean coast, Venezuela offers stunning landscapes, vibrant culture, and a resilient spirit that shines through its music, traditions, and people.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to">Dev.to Community</a></li>
+        <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://placeholder.com">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> · Alejandro Paz · Venezuela</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

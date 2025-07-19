@@ -1,0 +1,133 @@
+/* Fuente general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Header con ancho completo */
+header {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.highlight {
+  color: #90caf9;
+}
+
+/* Navegación */
+nav {
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Layout del contenido principal */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Estilo general de las tarjetas */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+/* Contenedor de contenido de tarjeta */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Parte superior: descripción + foto */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Ajuste para que el texto tenga espacio */
+.description {
+  flex: 1;
+}
+
+/* Imagen del perfil */
+.profile-pic {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+/* Línea divisora (separación entre descripción y Maracaibo) */
+.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 1rem 0;
+}
+
+/* Parte inferior: bandera + texto */
+.bottom-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Imagen de la bandera más grande */
+.flag img {
+  max-width: 150px;
+}
+
+/* Texto de Maracaibo a la derecha */
+.maracaibo-text {
+  flex: 1;
+}
+
+/* Footer oscuro */
+footer {
+  background-color: #1f1f1f;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p:last-child {
+  color: #90caf9;
+}
